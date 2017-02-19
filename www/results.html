@@ -1,0 +1,23 @@
+<ion-view>
+
+  <body ng-controller="resultsCTRL">
+    <ion-nav-view></ion-nav-view>
+      <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title" style="text-align:center; color:purple">Congratulations! You're done!</h1> <!-- The title bar has a title of "GuestBook" and uses an "h1" HTML tag -->
+      </ion-header-bar>
+      <ion-content>
+          
+   <!--        <button class="button" id = "first question" ng-click="isHorse()">Yes</button>
+           <button class="button" id = "first question" ng-click="isNotHorse()">No</button> 
+-->
+          <p style="text-align:center;font-size:20px">You got {{correct}}/2!</p>
+           <p style="text-align:center">
+          <button class="button" id = "finish" style="background-color:pink; color=teal" ng-click="goHome()">Finish</button> 
+          </p>
+          
+      
+      </ion-content>
+    </ion-pane>
+  </body>
+</ion-view>

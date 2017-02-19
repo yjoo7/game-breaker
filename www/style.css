@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img/forest.jpg");
+}
+h1{
+    font-family:"comic sans";
+    text-align: center;
+}
+h3{
+    font-family:"comic sans";
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.button {
+  
+    background-color:#9782FF;
+    text-align: center;
+}
+.button:hover {
+    background-color:#9782FF;
+    text-align: center;
+}
+.scroll-content{
+    background-image: url("img/forest.jpg");
+}
+.profile{
+     margin:auto;
+    text-align: center;
+    display: block;    
+}
+
+.hidden{
+    display:none;
+}
+
+.visible  {
+    display: visible;
+}
+
+.body, .ionic-body{
+    overflow: scroll !important;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}

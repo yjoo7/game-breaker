@@ -1,0 +1,28 @@
+<ion-view>
+      <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title" style="text-align:center; color:purple">What Kind Of Animal is This?</h1> <!-- The title bar has a title of "GuestBook" and uses an "h1" HTML tag -->
+      </ion-header-bar>
+      <ion-content>
+          
+   <!--        <button class="button" id = "first question" ng-click="isHorse()">Yes</button>
+           <button class="button" id = "first question" ng-click="isNotHorse()">No</button> 
+-->
+          <!--ask them to type in if this is a horse or not -->
+          <p style="text-align:center"> <img src ="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.slate.com%2Fcontent%2Fdam%2Fslate%2Farticles%2Farts%2Fculturebox%2F2015%2F10%2F151102_CBOX_Bojack-Horseman.jpg.CROP.promo-xlarge2.jpg&f=1" alt="cartoon" height="270" width="370"> </p>
+          
+          <div>
+             <label class="item item-input">
+                 
+                <input type="text" name="animal" id="secondQ-text" ng-model="$parent.animal"
+                    placeholder="Animal" >
+              </label>
+               <p style="text-align:center" >
+              <button ion-button style="color:white;background-color:#E01275" id="animal" ng-click="whatIs()">Submit</button>
+              </p>
+          </div>
+             
+      
+      </ion-content>
+    </ion-pane>
+  </ion-view>

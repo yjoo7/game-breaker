@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="myQuiz">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- for cordova SQLite -->
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-controller="welcomeCTRL" >
+    <ion-nav-view>
+      </ion-nav-view>
+
+      
+ 
+      <ion-pane>
+      <ion-header-bar class="bar-stable" >
+          <h1 class="title" style="text-align:center; color:purple">GameBreaker: Stretching With Eddie!</h1> 
+<!--           The title bar has a title of "GuestBook" and uses an "h1" HTML tag -->
+      </ion-header-bar>
+      <ion-content>
+          
+   <!--        <button class="button" id = "first question" ng-click="isHorse()">Yes</button>
+           <button class="button" id = "first question" ng-click="isNotHorse()">No</button> 
+    
+-->        <a href="https://imgflip.com/gif/1jx8zt"><img class="profile" src="Teddy/animated-wave.gif" title="made at imgflip.com"/img></a>         
+          
+          
+        
+      
+          
+         <center> <button onclick="setTimeout(hourTimer, 3000)" class="button" id = "start" >Start Timer</button>
+            
+<!-- 30,000 milliseconds = 30 seconds in real life, 3,600,000 is an hour -->
+             <button class="button" id = "start"  ng-click="start()">Stretch Time With Eddie</button> 
+             
+             
+                <button class="button" id = "Pause"  ng-click="start()">Pause</button> 
+          
+          
+          
+          </center>
+
+          <script>
+              function hourTimer() {
+                  alert('Time To Stretch!');
+              }
+          </script>
+          
+          
+          
+      </ion-content>
+    </ion-pane>
+  
+  </body>
+</html>
